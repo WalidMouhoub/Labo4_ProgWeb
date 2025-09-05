@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.EntityFrameworkCore;
 namespace ZombieParty.Models.Data
 {
     public class ZombiePartyDbContext : DbContext
@@ -7,6 +8,7 @@ namespace ZombieParty.Models.Data
         {
 
         }
+        
         public DbSet<Zombie> Zombies { get; set; }
         public DbSet<ZombieType> ZombieTypes { get; set; }
 
